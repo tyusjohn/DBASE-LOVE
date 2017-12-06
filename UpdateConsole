@@ -36,7 +36,7 @@ public class MainConsole {
     	switch (option) {
 	    	case 1: // Enter contact person
 	    		enterContact();
-	    		break;
+	    		break; 
 	    	case 2: // Enter contact number(s)
 	    		// do something here
 	    		break;
