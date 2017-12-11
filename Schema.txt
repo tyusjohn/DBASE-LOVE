@@ -1,0 +1,80 @@
+STUDENT
+
+Add Account	
+	INSERT INTO student(idNumber, lastName, firstName, midinitial, gender, contactNo, emailAdd)
+	VALUES ( '2161332' ,' Bautista', ' Aian', ' J', ' M',  '09778026814',  'aian@email.com' );
+	
+Check Account	Select * from student
+
+Update Account	Update student
+	SET gender = 'F',  lastName= 'Gonzalez'
+	WHERE IdNumber=2154782;
+	
+Delete Account	DELETE FROM STUDENT
+	WHERE IdNumber='2161332';
+
+	
+	
+	
+CLASS	
+	
+Add Class
+	INSERT INTO class (classCode, time, day, subjID)
+	VALUES ('9329', '11:00 AM-12:30 PM', 'WF', '10001');
+	
+Check Class 
+	Select * from class
+	
+Update class 
+	Update class
+	SET day = 'TF', time = '9:30-11:00' 
+	WHERE classCode = 9329;
+	
+Delete Class 
+	DELETE FROM CLASS
+	WHERE classCode = '9330A';
+	
+
+	
+SUBJECT
+
+Add SUBJECT	
+	INSERT INTO SUBJECT (subjID, title, day, units) 
+	VALUES ('CS 321A', 'INTRODUCTION TO AUTOMATA & FORMAL LANGUAGES', 'TThS', '3');
+
+Check SUBJECT
+	SELECT * FROM SUBJECT;
+	
+Update SUBJECT
+	Update subject
+	SET day = 'WS'
+	WHERE subjID = 'PHYS 2B';
+
+DELETE Subject	
+	Delete from subject
+	where title = 'Electromagnetism and Electricity';
+	
+	
+	
+ENROLL
+	
+ENROLL CLASS
+	INSERT INTO Enroll(classCode,idNumber,dateSubmitted)
+    Values ('9382', '2120699','08/24/17');
+
+UNENROLL CLASS
+	Delete from Enroll
+	WHERE classcode='9381',idnumber = '2159211'
+
+CHECK ENROLL
+	SELECT * FROM enroll
+
+UPDATE ENROLL
+	UPDATE Enroll
+	SET Classcode = '9348'
+	where idNumber = 2159211;
+	
+
+
+ 
+	
